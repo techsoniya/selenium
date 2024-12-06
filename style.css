@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #004aad, #00b4ff);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004aad;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#logoutButton {
+    background: #ff3333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#logoutButton.hidden {
+    display: none;
+}
+
+/* Containers */
+.container {
+    background: #ffffff;
+    border: 3px solid #004aad;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container.hidden {
+    display: none;
+}
+
+/* Input Fields */
+.input-section input {
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #004aad;
+    background-color: #e6f7ff;
+    color: #000;
+}
+
+input:focus {
+    border-color: #00b4ff;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #004aad;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003a82;
+}
+
+/* To-Do List Specific */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background: #e6f7ff;
+    border: 2px solid #004aad;
+    border-radius: 8px;
+    color: #000;
+}
+
+.theme-toggle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #e6f7ff;
+}
+
+body.dark-mode input {
+    background-color: #002d62;
+    color: #fff;
+    border: 2px solid #007acc;
+}
+
+body.dark-mode li {
+    background-color: #002d62;
+    color: #e6f7ff;
+}
+
+body.dark-mode button {
+    background-color: #007acc;
+}
+
+body.dark-mode button:hover {
+    background-color: #005ea6;
+}
